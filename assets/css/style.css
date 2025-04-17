@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    color: #181818;
+    text-decoration: none;
+}
+
+header {
+    padding: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    color: blue;
+    font-weight: 500;
+}
+
+.header-nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    cursor: pointer;
+}
+
+.submenu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+
+.submenu.active {
+    display: flex;
+}
+
+.submenu .nav-item {
+    white-space: nowrap;
+}
+
+.faq {
+    margin-top: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+    border-top: 1px solid #727272aa;
+}
+
+.faq-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.faq-btn {
+    transition: 0.3s ease-in;
+}
+
+.faq-head.active .faq-btn {
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in;
+    border-bottom: 1px solid #727272aa;
+}
+
+.faq-text {
+    padding: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
